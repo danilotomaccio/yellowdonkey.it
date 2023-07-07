@@ -121,10 +121,12 @@ body {
 }
 
 #indirizzo {
-    width: 90%;
+    max-width: 90%;
 }
 
-#indirizzo:hover {
+#indirizzo:hover,
+#data:hover
+ {
     cursor: url('img/Cursore_aranc.png'), auto;
 }
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="img/Papera.svg">
-    
+
     <meta name="theme-color" content="#23aabc">
 
     <title>Un anno Enea</title>
@@ -110,6 +110,10 @@
         document.getElementById("indirizzo").onclick = function () {
             window.open("https://goo.gl/maps/o71A5b9XzihKrcVs5", '_blank');
         };
+
+        document.getElementById("data").addEventListener("click", function () {
+            window.open('evento.ics', '_blank');
+        });
     </script>
 </body>
 
