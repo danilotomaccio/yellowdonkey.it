@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="img/Papera.svg">
+    
+    <meta name="theme-color" content="#23aabc">
 
     <title>Un anno Enea</title>
     <meta property="og:title" content="Un invito per te">
@@ -33,11 +35,11 @@
             <div id="enea" class="modernLove">
                 Enea
             </div>
-            
+
             <div id="felice" class="chaloops">
                 è felice di invitarvi al suo primo compleanno
             </div>
-            
+
             <div id="data" class="moonblossom">
                 <div id="giorno">
                     sabato
@@ -49,14 +51,14 @@
                     luglio 2023
                 </div>
             </div>
-            
+
             <div id="indirizzo" class="moonblossom">
                 agriturismo la reginella,
                 strada provinciale 34,
                 cicciano
             </div>
-            
-            <div id="conferma"  class="chaloops">
+
+            <div id="conferma" class="chaloops">
                 Dare conferma a mamma e a papà
             </div>
         </div>
@@ -101,7 +103,9 @@
     </script>
 
     <script>
-        console.log(document.getElementById("testo"));
+        document.getElementById("indirizzo").onclick = function () {
+            window.open("https://goo.gl/maps/o71A5b9XzihKrcVs5", '_blank');
+        };
     </script>
 </body>
 
