@@ -60,6 +60,8 @@ body {
 
 .bolla {
   width: 10%;
+  position: absolute;
+  bottom: 0;
 }
 
 .moonblossom {
