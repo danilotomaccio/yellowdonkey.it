@@ -25,11 +25,19 @@
 
     <div class="bg">
     </div>
-    <div class="fg">
+    <div id="foreground" class="fg">
         <img class="papera" src="img/Papera.svg" alt="">
         <img class="testo" src="img/Testo.svg" alt="">
-        <img id="bolla" class="bolla" src="img/Bolla.svg" alt="">
     </div>
+    <img id="bolla" class="bolla" src="img/Bolla.svg" alt="">
+
+    <script>
+        const img = new Image();
+        img.src = 'img/Sfondo.svg';
+        img.onload = function () {
+            document.getElementById('foreground').style.display = 'flex';
+        };
+    </script>
 
     <script>
         const numBolle = 40;

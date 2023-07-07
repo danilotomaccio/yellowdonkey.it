@@ -24,13 +24,10 @@ body {
   height: 100vh;
 }
 
-.sfondo {
-}
-
 .fg {
   position: relative;
   text-align: center;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
