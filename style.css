@@ -1,5 +1,6 @@
 html {
   overflow: hidden;
+  cursor: url(img/Cursore\ hover.png), auto;
 }
 
 html,
@@ -80,6 +81,7 @@ body {
 
   width: 1.5em;
   margin: 8px;
+  padding: 10px;
 }
 
 #mese {
@@ -111,4 +113,21 @@ body {
   font-style: normal;
   color: #23aabc;
   font-size: 103px;
+}
+
+#indirizzo:hover {
+    cursor: url('img/Cursore.png'), auto;
+}
+
+
+@media (min-width: 900px) {
+    .fg {
+        flex-direction: row;
+    }
+
+    .papera {
+        width: 50%;
+
+        margin: 20px;
+    }
 }
