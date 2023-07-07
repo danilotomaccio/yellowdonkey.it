@@ -48,16 +48,22 @@ body {
 }
 
 .moonblossom {
-    font-family: "moonblossom", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-.sharktooth {
-  font-family: "sharktooth", sans-serif;
+  font-family: "moonblossom", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
+.chaloops {
+  font-family: "chaloops", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* .sharktooth {
+  font-family: "sharktooth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
 
 .modernLove {
   font-family: "modern-love", sans-serif;
