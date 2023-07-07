@@ -33,7 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding-top: 38px;
+  padding-top: 28px;
 
   overflow: hidden;
 }
@@ -117,7 +117,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #23aabc;
-  font-size: 100px;
+  font-size: 96px;
   line-height: 1.1em;
 }
 
