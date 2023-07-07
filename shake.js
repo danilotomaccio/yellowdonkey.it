@@ -45,7 +45,7 @@ function createBubbles(numBolle) {
     const body = document.body;
 
     for (let i = 0; i < numBolle; i++) {
-        const nuovaBolla = document.getElementById("bolla").cloneNode(true);
+        const nuovaBolla = document.getElementById("bollaShake").cloneNode(true);
         nuovaBolla.style.width = (Math.random() * 50) + "px";
         nuovaBolla.style.height = nuovaBolla.style.width;
         nuovaBolla.style.left = (Math.random() * 100) + "vw";
