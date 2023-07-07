@@ -1,48 +1,66 @@
-html, body {
-    margin: 0;
+html,
+body {
+  margin: 0;
 }
 
 .bg {
-    background-image: url('img/Sfondo.svg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+  background-image: url("img/Sfondo.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 .sfondo {
-
 }
 
 .fg {
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .papera {
-    width: 70%;
+  width: 70%;
 }
 
 .testo {
-    width: 70%;
+  width: 70%;
 }
 
 .bolla {
-    width: 10%;
-    position: absolute;
-    bottom: 0;
+  width: 10%;
+  position: absolute;
+  bottom: 0;
+}
+
+.moonblossom {
+    font-family: "moonblossom", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.sharktooth {
+  font-family: "sharktooth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.modernLove {
+  font-family: "modern-love", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
