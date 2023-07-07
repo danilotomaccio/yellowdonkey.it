@@ -31,6 +31,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  overflow: hidden;
 }
 
 .papera {
@@ -45,7 +47,6 @@ body {
   width: 10%;
   position: absolute;
   bottom: 0;
-  overflow: hidden;
 }
 
 .moonblossom {
