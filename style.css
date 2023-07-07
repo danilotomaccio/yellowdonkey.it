@@ -132,6 +132,10 @@ body {
     cursor: url('img/Cursore_aranc.png'), auto;
 }
 
+#bolle {
+    height: 100vh;
+}
+
 
 @media (min-width: 900px) {
     .fg {
