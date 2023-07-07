@@ -9,7 +9,7 @@ body {
 }
 
 .bg {
-  background-image: url("img/Sfondo.svg");
+  background-image: url("img/Sfondo.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -148,16 +148,16 @@ body {
 
 @media (max-height: 800px) {
 #enea {
-    font-size: 88px;
+    font-size: 80px;
 }
 #giorno, #mese, #ora {
-    font-size: 24px;
+    font-size: 22px;
 }
 #numero {
-    font-size: 60px;
+    font-size: 56px;
 }
 #rinfresco,
 #indirizzo, #conferma, #felice {
-    font-size: 22px;
+    font-size: 20px;
 }
 }
