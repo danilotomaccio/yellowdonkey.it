@@ -1,6 +1,6 @@
 html {
   overflow: hidden;
-  cursor: url(img/Cursore\ hover.png), auto;
+  cursor: url(img/Cursore_azz.png), auto;
 }
 
 html,
@@ -80,12 +80,16 @@ body {
   background-repeat: no-repeat;
 
   width: 1.5em;
-  margin: 8px;
+  margin: 0 8px;
   padding: 10px;
 }
 
 #mese {
     font-size: 30px;
+}
+
+#ora {
+    margin: 0 0 14px 0;
 }
 
 #conferma {
@@ -113,10 +117,15 @@ body {
   font-style: normal;
   color: #23aabc;
   font-size: 103px;
+  line-height: 1.4em;
+}
+
+#indirizzo {
+    width: 90%;
 }
 
 #indirizzo:hover {
-    cursor: url('img/Cursore.png'), auto;
+    cursor: url('img/Cursore_aranc.png'), auto;
 }
 
 
