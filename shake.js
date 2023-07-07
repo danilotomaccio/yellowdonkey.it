@@ -57,7 +57,7 @@ function createBubbles(numBolle) {
     bolleShake.forEach(function (bolla, index) {
         gsap.to("#" + bolla.id, {
             duration: Math.random() * 2 + 1,
-            y: "-1000px",
+            y: "-2000px",
             opacity: 0,
             repeat: 1,
             ease: "linear",
