@@ -60,7 +60,10 @@ function createBubbles(numBolle) {
             y: "-1000px",
             opacity: 0,
             repeat: 1,
-            ease: "linear"
+            ease: "linear",
+            onComplete: function() {
+                body.removeChild(bolla);
+            }
         });
     });
 
