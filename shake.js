@@ -49,6 +49,7 @@ function createBubbles(numBolle) {
         nuovaBolla.style.width = (Math.random() * 50) + "px";
         nuovaBolla.style.height = nuovaBolla.style.width;
         nuovaBolla.style.left = (Math.random() * 100) + "vw";
+        nuovaBolla.style.bottom = "0px";
         nuovaBolla.id = "bollaShake" + (i + 1);
         body.appendChild(nuovaBolla);
         bolleShake.push(nuovaBolla);

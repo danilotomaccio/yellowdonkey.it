@@ -72,9 +72,7 @@
 
     </div>
 
-    <div id="bolle">
         <img id="bolla" class="bolla" src="img/Bolla.svg" alt="">
-    </div>
 
     <script>
         const img = new Image();
@@ -94,6 +92,7 @@
             nuovaBolla.style.width = (Math.random() * 50) + "px";
             nuovaBolla.style.height = nuovaBolla.style.width;
             nuovaBolla.style.left = (Math.random() * 100) + "vw";
+            nuovaBolla.style.bottom = "0px";
             nuovaBolla.id = "bolla" + (i + 1);
             body.appendChild(nuovaBolla);
             bolle.push(nuovaBolla);
