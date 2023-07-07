@@ -64,5 +64,5 @@ function createBubbles(numBolle) {
         });
     });
 
-    bolleShake = [];
+    bolleShake.length = 0;
 }
