@@ -120,6 +120,13 @@
         });
     </script>
 
+    <script>
+        const addressBarHeight = window.outerHeight - window.innerHeight;
+        if (addressBarHeight > 0) {
+            document.getElementById("foreground").style.paddingTop = addressBarHeight;
+        }
+    </script>
+
     <script src="shake.js"></script>
 </body>
 
