@@ -28,7 +28,7 @@ function shakeDetection(event) {
     if (deltaX + deltaY + deltaZ > threshold) {
         shakeCount++;
         if (shakeCount > 2) {
-            createBubble(50);
+            createBubbles(50);
             shakeCount = 0;
         }
     } else {
@@ -40,8 +40,8 @@ function shakeDetection(event) {
     lastZ = z;
 }
 
-function createBubble(numBolle) {
-    const bolleShake = [document.getElementById("bolla")];
+function createBubbles(numBolle) {
+    const bolleShake = [];
     const body = document.body;
 
     for (let i = 0; i < numBolle; i++) {
