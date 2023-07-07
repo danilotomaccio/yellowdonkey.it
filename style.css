@@ -134,6 +134,9 @@ body {
 
 #bolle {
     height: 100vh;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
 
 
