@@ -41,7 +41,7 @@ function shakeDetection(event) {
 }
 
 function createBubble(numBolle) {
-    const bolle = [document.getElementById("bolla")];
+    const bolleShake = [document.getElementById("bolla")];
     const body = document.body;
 
     for (let i = 0; i < numBolle; i++) {
@@ -51,10 +51,10 @@ function createBubble(numBolle) {
         nuovaBolla.style.left = (Math.random() * 100) + "vw";
         nuovaBolla.id = "bolla" + (i + 1);
         body.appendChild(nuovaBolla);
-        bolle.push(nuovaBolla);
+        bolleShake.push(nuovaBolla);
     }
 
-    bolle.forEach(function (bolla) {
+    bolleShake.forEach(function (bolla) {
         gsap.to("#" + bolla.id, {
             duration: Math.random() * 2 + 1,
             y: "-1000px",
@@ -63,4 +63,6 @@ function createBubble(numBolle) {
             ease: "linear"
         });
     });
+
+    bolleShake = [];
 }
