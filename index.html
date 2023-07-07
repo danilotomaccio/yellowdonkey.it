@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un anno Enea</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+
+    <div class="bg">
+    </div>
+    <div class="fg">
+        <img class="papera" src="img/Papera.svg" alt="">
+        <img class="testo" src="img/Testo.svg" alt="">
+        <img id="bolla" class="bolla" src="img/Bolla.svg" alt="">
+    </div>
+
+    <script>
+        const numBolle = 40;
+        const bolle = [document.getElementById("bolla")];
+        const body = document.body;
+
+        for (let i = 0; i < numBolle; i++) {
+            const nuovaBolla = document.getElementById("bolla").cloneNode(true);
+            nuovaBolla.style.width = (Math.random() * 50) + "px";
+            nuovaBolla.style.height = nuovaBolla.style.width;
+            nuovaBolla.style.left = (Math.random() * 100) + "vw";
+            nuovaBolla.id = "bolla" + (i + 1);
+            body.appendChild(nuovaBolla);
+            bolle.push(nuovaBolla);
+        }
+
+        bolle.forEach(function (bolla) {
+            gsap.to("#" + bolla.id, {
+                duration: Math.random() * 6 + 1,
+                y: "-1000px",
+                opacity: 0.3,
+                repeat: -1,
+                ease: "linear"
+            });
+        });
+
+    </script>
+</body>
+
+</html>
