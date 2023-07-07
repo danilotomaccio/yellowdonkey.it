@@ -58,7 +58,7 @@ function createBubble(numBolle) {
         gsap.to("#" + bolla.id, {
             duration: Math.random() * 2 + 1,
             y: "-1000px",
-            opacity: 0.3,
+            opacity: 0,
             repeat: 1,
             ease: "linear"
         });
