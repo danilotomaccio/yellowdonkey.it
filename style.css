@@ -147,6 +147,10 @@ body {
 }
 
 @media (max-height: 800px) {
+.papera {
+    max-width: 55%;
+}
+
 #enea {
     font-size: 80px;
 }
