@@ -15,7 +15,8 @@
 
     <title>Un anno Enea</title>
 
-    <link rel="stylesheet" href="https://use.typekit.net/dvs5jvb.css">
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/dvs5jvb.css"> -->
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -27,7 +28,9 @@
     </div>
     <div id="foreground" class="fg">
         <img class="papera" src="img/Papera.svg" alt="">
-        <img class="testo" src="img/Testo.svg" alt="">
+        <img id="testo" class="testo" src="img/Testo.svg" alt="">
+
+        
     </div>
     <img id="bolla" class="bolla" src="img/Bolla.svg" alt="">
 
@@ -64,6 +67,10 @@
             });
         });
 
+    </script>
+
+    <script>
+        console.log(document.getElementById("testo"));
     </script>
 </body>
 
