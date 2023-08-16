@@ -1,135 +1,15 @@
 <!DOCTYPE html>
-<html lang="it">
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="img/Papera.svg">
-
-    <meta name="theme-color" content="#23aabc">
-
-    <title>Un anno Enea</title>
-    <meta property="og:title" content="Un invito per te">
-    <meta property="og:description" content="Primo compleanno di Enea">
-    <meta property="og:image" content="img/Anteprima.png">
-    <meta property="og:url" content="https://yellowdonkey.it">
-    <meta name="twitter:card" content="summary_large_image">
-
-    <title>Un anno Enea</title>
-
-    <link rel="stylesheet" href="https://use.typekit.net/dvs5jvb.css">
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/assets/index-34a07d4b.js"></script>
+    <link rel="stylesheet" href="/assets/index-e7ae667e.css">
+  </head>
+  <body>
+    <div id="app"></div>
     
-    <div id="background" class="bg"></div>
-    <div id="foreground" class="fg">
-        <img class="papera" src="img/Papera.svg" alt="">
-
-        <div class="testo">
-            <div id="enea" class="modernLove">
-                Enea
-            </div>
-
-            <div id="felice" class="chaloops">
-                è felice di invitarvi al suo primo compleanno
-            </div>
-
-            <div id="data" class="moonblossom">
-                <div id="giorno">
-                    sabato
-                </div>
-                <div id="numero">
-                    15
-                </div>
-                <div id="mese">
-                    luglio 2023
-                </div>
-            </div>
-
-            <div id="ora" class="moonblossom">
-                Ore 18:30
-            </div>
-
-            <div id="rinfresco" class="chaloops">
-                per un rinfresco presso
-            </div>
-
-            <div id="indirizzo" class="moonblossom">
-                agriturismo la reginella,
-                strada provinciale 34,
-                cicciano
-            </div>
-
-            <div id="conferma" class="chaloops">
-                Dare conferma a mamma e a papà
-            </div>
-        </div>
-
-
-    </div>
-
-        <img id="bolla" class="bolla" src="img/Bolla.svg" alt="">
-
-    <script>
-        const img = new Image();
-        img.src = 'img/Sfondo.png';
-        img.onload = function () {
-            document.getElementById('foreground').style.display = 'flex';
-        };
-    </script>
-
-    <script>
-        const numBolle = 40;
-        const bolle = [document.getElementById("bolla")];
-        const body = document.body;
-
-        for (let i = 0; i < numBolle; i++) {
-            const nuovaBolla = document.getElementById("bolla").cloneNode(true);
-            nuovaBolla.style.width = (Math.random() * 50) + "px";
-            nuovaBolla.style.height = nuovaBolla.style.width;
-            nuovaBolla.style.left = (Math.random() * 100) + "vw";
-            nuovaBolla.style.bottom = "0px";
-            nuovaBolla.id = "bolla" + (i + 1);
-            body.appendChild(nuovaBolla);
-            bolle.push(nuovaBolla);
-        }
-
-        bolle.forEach(function (bolla) {
-            gsap.to("#" + bolla.id, {
-                duration: Math.random() * 6 + 1,
-                y: "-1000px",
-                opacity: 0.3,
-                repeat: -1,
-                ease: "linear"
-            });
-        });
-
-    </script>
-
-    <script>
-        document.getElementById("indirizzo").onclick = function () {
-            window.open("https://goo.gl/maps/o71A5b9XzihKrcVs5", '_blank');
-        };
-
-        document.getElementById("data").addEventListener("click", function () {
-            window.open('evento.ics', '_blank');
-        });
-    </script>
-
-    <script>
-        const addressBarHeight = window.outerHeight - window.innerHeight;
-        document.getElementById("foreground").style.height = window.innerHeight + 'px';
-        document.getElementById("background").style.height = window.innerHeight + 'px';
-        if (addressBarHeight >= 0) {
-            // document.getElementById("foreground").style.paddingTop = addressBarHeight + 'px';
-        }
-    </script>
-
-    <script src="shake.js"></script>
-</body>
-
+  </body>
 </html>
