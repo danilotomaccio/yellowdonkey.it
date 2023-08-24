@@ -1,1 +1,0 @@
-import{d as a,T as s,R as t,c as i,t as n,e as o,S as c,b as l}from"./index-21b4a8d7.js";const r={class:"adminPanel"},u=a({__name:"AdminView",setup(_){const e=s(t(c,"availabilities"));return(d,m)=>(l(),i("div",r,n(o(e)),1))}});export{u as default};
